@@ -1,3 +1,3 @@
 @extends('layout.app')
 
-<h2>singolo</h2>
+<h2>{{$comic->title}}</h2>

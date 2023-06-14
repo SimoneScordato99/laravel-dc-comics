@@ -15,4 +15,4 @@ use App\Http\Controllers\ComicController;
 */
 
 
-Route::resource('/comic', ComicController::class);
+Route::resource('/comics', ComicController::class);
