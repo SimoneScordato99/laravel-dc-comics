@@ -1,9 +1,10 @@
 @extends('layout.app')
 
 @section('mario')
+<h1>HOME</h1>
 <main>
     @foreach($comics as $elem)
-        <a href="/peppe/{{$elem['id']}}">
+        <a href="/comics/{{$elem['id']}}">
             <div class="card" style="width: 18rem;">
                 <img src="{{$elem['thumb']}}" class="card-img-top" alt="{{$elem['title']}}">
                 <div class="card-body">
