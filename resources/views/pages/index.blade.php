@@ -15,7 +15,19 @@
                 <form action=" {{ route('comics.destroy', $elem) }} " method="POST">
                     @csrf
                     @method('DELETE')
-                    <button type="submit" class="btn btn-danger">Elimina</button>
+                    <p>
+                    <a class="btn btn-danger" data-bs-toggle="collapse" href="#{{$elem->id}}" role="button" aria-expanded="false" aria-controls="{{$elem->id}}">Elimina</a>
+                    </p>
+                    <div class="row">
+                        <div class="col">
+                            <div class="collapse multi-collapse" id="{{$elem->id}}">
+                            <div class="card card-body">
+                                Sei sicuro di voler eliminare questo?
+                                <button type="submit" class="btn btn-danger">Elimina</button>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
                 </form>
             </div>
         </a>
